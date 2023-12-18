@@ -8,12 +8,12 @@ $thumb_height = 150;
 $list_count = (is_array($list) && $list) ? count($list) : 0;
 
 ?>
-<link
+<!-- <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
 <div class="swiper <?php echo $bo_table; ?> " >
    
@@ -53,10 +53,16 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
 </div>
 <script>
 const swiper = new Swiper('.swiper.<?php echo $bo_table; ?>', {
-slidesPerView: 2,
+  slidesPerView: 4,
   loop: true, 
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper.<?php echo $bo_table; ?> .swiper-pagination',
+    type: "fraction",
   }, 
   navigation: {
     nextEl: '.swiper.<?php echo $bo_table; ?> .swiper-button-next',

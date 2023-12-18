@@ -161,3 +161,8 @@
 .footer_counsel .f_bu {position: relative;float: right;border: 0px solid blue;}
 .footer_counsel .f_bus {width: 176px;height:44px;font-size:22px;letter-spacing: -2px;background: #df2028;border: none;color: #fff;cursor: pointer;}
 /*하단 상담신청배너 end*/
+
+/* `ssh */
+.div[style="height:155px;"] {
+	height: 0 ;
+}

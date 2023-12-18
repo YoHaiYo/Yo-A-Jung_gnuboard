@@ -30,7 +30,7 @@ $options['btnc'] = (isset($options['btnc']) && $options['btnc']) ? $options['btn
 
 <?php if(defined('_INDEX_')) {?><!-- index에서만 실행 -->
 
-	<div style="height:<?php echo $options['footer_h'];?>px;"></div>
+	<!-- <div style="height:<?php echo $options['footer_h'];?>px;"></div> -->
 	<style>
 	.quotation{
 		height:<?php echo $options['footer_h'];?>px;

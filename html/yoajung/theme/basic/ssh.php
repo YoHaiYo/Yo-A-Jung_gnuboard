@@ -474,51 +474,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
   </main>
   <!-- E:메인 -->
 
-  <!-- S:하단 -->
-  <footer id="footer">
-    <div class="f_main">
-      <div class="f_main__wrap">
-        <span class="f_logo"></span>
-        <ul class="f_link">
-          <li>
-            <a href="/child/sub/brand//">브랜드</a>
-          </li>
-          <li>
-            <a href="/child/sub/startup/merit.php">창업안내</a>
-          </li>
-          <li>
-            <a href="/child/sub/news/notice/">와플대학 소식</a>
-          </li>
-          <li>
-            <a href="/child/sub/member/inquiry.php">고객의 소리</a>
-          </li>
-          <li>
-            <a href="/child/sub/member/privacy.php">개인정보처리방침</a>
-          </li>
-        </ul>
-        <div class="f_info">
-          <div class="f_info__item">
-            <span>대표이사 : 손정희</span>
-            <span>사업자등록번호 : 191-88-02243</span>
-          </div>
-          <div class="f_info__item">
-            <span>주소 : 서울특별시 용산구 한강대로 325(갈월동)</span>
-            <span>Office Hour : 평일 09:00 ~ 18:00 (점심시간 11:30 – 13:00 )</span>
-          </div>
-          <div class="f_info__item">
-            <span>E-mail : waffleuniv.marketing@gmail.com</span>
-            <span>Tel : 1588-1706</span>
-            <span>Fax : 070-4170-4105</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="f_copy">
-      <p class="f_copy__txt">Copyright 2023. <span class="font-weight--semibold">waffleuniv.</span> All rights reserved.
-      </p>
-    </div>
-  </footer>
-  <!-- E:하단 -->
+  
 
 </div>
 

@@ -124,8 +124,8 @@ span.bg {
 }
 
 /* 헤더때매 가려지는 게시판 보이게하기 */
-.container.boardpage {
-  margin-top: 150px;
+body.subpage .container.boardpage {
+  margin-top: 250px;
 }
 
 
