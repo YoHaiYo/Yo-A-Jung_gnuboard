@@ -10,7 +10,10 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
 ?>
 
 <div class="pic_lt">
-    <h2 class="lat_title"><a href="<?php echo get_pretty_url($bo_table); ?>"><?php echo $bo_subject ?></a></h2>
+    <p class="sec-tit">
+        <span><a href="<?php echo get_pretty_url($bo_table); ?>"><?php echo $bo_subject ?></a></span>
+    </p>
+    
     <ul>
     <?php
     for ($i=0; $i<$list_count; $i++) {
@@ -53,7 +56,6 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
             ?>
 
             <div class="lt_info">
-				<span class="lt_nick"><?php echo $list[$i]['name'] ?></span>
             	<span class="lt_date"><?php echo $list[$i]['datetime2'] ?></span>              
             </div>
         </li>

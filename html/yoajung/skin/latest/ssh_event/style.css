@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 
 /* 새글 스킨 (latest) */
@@ -5,7 +6,7 @@
 .pic_lt .lat_title {display:block;line-height:45px;font-size:1.2em;color:#253dbe}
 .pic_lt .lat_title a {color:#000;display:inline-block;position:relative}
 
-.pic_lt .lt_more {position:absolute;top:11px;right:10px;display:block;width:25px;line-height:25px;color:#aaa;border-radius:3px;text-align:center;}
+.pic_lt .lt_more {position:absolute;top:11px;right:10px;display:block;width:30px;line-height:30px;color:#333;border-radius:3px;text-align:center;}
 .pic_lt .lt_more:hover {color:#777}
 .pic_lt ul:after {display:block;visibility:hidden;clear:both;content:""}
 .pic_lt ul {margin: 0 -10px}
@@ -39,4 +40,8 @@
 .sec--04 .tab-con li {
   display: block !important;
   position: unset;
+}
+.gallery_li>a>img{
+  height: 150px;
+  width: 150px;
 }

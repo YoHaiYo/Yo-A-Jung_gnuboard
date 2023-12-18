@@ -577,9 +577,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     <!-- S:게시판 -->
     <div class="sec sec--04">
       <div class="container container--w1600" data-aos="fade-up">
-        <p class="sec-tit">
-          <span>와플대학 BRAND NEWS</span>
-        </p>
+ 
         <div class="con">
 
           <div class="board board--main">
