@@ -95,7 +95,8 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
       <?php }  ?>
       <?php } else {  ?>
       <li><a href="<?php echo G5_BBS_URL ?>/register.php">회원가입</a></li>
-      <li><a href="<?php echo G5_BBS_URL ?>/login.php">로그인</a></li>
+      <!-- url= 로그인시 보여줄페이지 -->
+      <li><a href="<?php echo G5_BBS_URL ?>/login.php?url=<?php echo G5_BBS_URL ?>/content.php?co_id=company">로그인</a></li>
       <?php }  ?>
 
     </ul>
