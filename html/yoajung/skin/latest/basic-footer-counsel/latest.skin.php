@@ -28,6 +28,8 @@ $options['btn'] = (isset($options['btn']) && $options['btn']) ? $options['btn'] 
 $options['btnc'] = (isset($options['btnc']) && $options['btnc']) ? $options['btnc'] : 'black';
 ?>
 
+<?php if(defined('_INDEX_')) {?><!-- index에서만 실행 -->
+
 	<div style="height:<?php echo $options['footer_h'];?>px;"></div>
 	<style>
 	.quotation{
@@ -242,3 +244,5 @@ alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+
 			});
 		</script>
 	</div>
+
+	<?php } ?><!-- index에서만 실행 -->

@@ -53,6 +53,7 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
 </div>
 <script>
 const swiper = new Swiper('.swiper.<?php echo $bo_table; ?>', {
+slidesPerView: 2,
   loop: true, 
   pagination: {
     el: '.swiper.<?php echo $bo_table; ?> .swiper-pagination',
