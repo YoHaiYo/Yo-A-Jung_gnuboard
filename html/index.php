@@ -9,7 +9,7 @@
 <body>
   
   <h2><a href="/yoajung">요아정 그누보드 바로가기</a></h2>
-  <h3><a href="https://github.com/YoHaiYo/gnuboard-yoajung">요아정 깃허브 바로가기</a></h3>
+  <h3><a href="https://github.com/YoHaiYo/Yo-A-Jung_gnuboard">요아정 깃허브 바로가기</a></h3>
   <h3><a href="https://yoajung.co.kr/index">요아정 공홈 바로가기</a></h3>
   <h3><a href="https://www.waffleuniv.com/">와플대학 공홈 바로가기</a></h3>
   
