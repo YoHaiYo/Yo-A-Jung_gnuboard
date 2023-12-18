@@ -196,8 +196,8 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                   </div>
                 </div>
                 <div class="swiper-navi">
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
+                  <div class="prev"></div>
+                  <div class="next"></div>
                 </div>
               </div>
             </div>
@@ -211,103 +211,15 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     <!-- S:메뉴 -->
     <div class="sec sec--02">
       <div class="container container--w1600">
-        <p class="sec-tit">
-          <span>와플대학 Best 10 Menu</span>
-        </p>
-        <div class="con" data-aos="fade-up">
-          <div class="menu menu--main">
-            <div class="din">
-              <!-- S:Left Menu -->
-              <div class="lt">
-                <ul class="tab-menu">
-                  <li class="on">
-                    <button type="button" class="button">Waffle</button>
-                  </li>
-                  <li>
-                    <button type="button" class="button">Special Waffle</button>
-                  </li>
-                  <li>
-                    <button type="button" class="button">Coffee / Latte</button>
-                  </li>
-                  <li>
-                    <button type="button" class="button">Beverage</button>
-                  </li>
-                  <li>
-                    <button type="button" class="button">Gelato</button>
-                  </li>
-                  <li>
-                    <button type="button" class="button">School Food</button>
-                  </li>
-                </ul>
-              </div>
-              <!-- E:Left Menu -->
-              <!-- S:Left Con -->
-              <div class="rt">
-                <ul class="tab-con">
-                  <!-- S:Waffle -->
-                  <li class="on">
-                    <div class="block block--01">
-                      <!-- S:Thumb -->
-                      <div class="block-box block-box--img">
-                        <div class="swiper swiper-container swiper-container--main">
-                          <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                              <div class="img">
-                                <div class="img_thumb">
-                                  <img src="https://www.waffleuniv.com/child/img/main/menu/waffle/sec02_menu__img01.png"
-                                    alt="크림와플">
-                                </div>
-                                <div class="img_bg"></div>
-                              </div>
-                              <div class="text">
-                                <p class="t01">크림와플</p>
-                                <p class="t02">
-                                  10가지 와플크림 중 원하는 크림을 <br>
-                                  선택하여 즐겨보세요
-                                </p>
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="img">
-                                <div class="img_thumb">
-                                  <img src="https://www.waffleuniv.com/child/img/main/menu/waffle/sec02_menu__img02.png"
-                                    alt="스노우와플">
-                                </div>
-                                <div class="img_bg"></div>
-                              </div>
-                              <div class="text">
-                                <p class="t01">스노우와플</p>
-                                <p class="t02">
-                                  와플대학의 10가지 크림과 생크림이 <br>
-                                  어우러져 배로 맛있는와플
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="pagination"></div>
-                        </div>
-                      </div>
-                      <!-- E:Thumb -->
 
-                      <!-- `ssh 메뉴 넣기 -->
-                      <?php echo latest("ssh_menu", "menu", 8, 100); ?>
-
-                      
-                    </div>
-                  </li>
-                  <!-- E:Waffle -->
-                  <!-- S:Special -->
-                  
-                  <!-- E:School -->
-                </ul>
-              </div>
-              <!-- E:Left Con -->
-            </div>
-          </div>
-        </div>
+         <!-- `ssh 메뉴 넣기 -->
+    <?php echo latest("ssh_menu", "menu", 8, 100); ?>
+        
       </div>
     </div>
     <!-- E:메뉴 -->
+ 
+
 
     <!-- S:브랜드 -->
     <div class="sec sec--03">

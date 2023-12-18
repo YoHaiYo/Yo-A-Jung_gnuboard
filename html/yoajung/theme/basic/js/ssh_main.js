@@ -187,25 +187,26 @@ function mainMenu() {
 
 
 // SWIPER
-
-const waffle_swiper = new Swiper(".swiper", {
+// 메인배너
+const waffle_swiper = new Swiper(".swiper.swiper-container--photo", {
   // Optional parameters
   // direction: 'vertical',
   loop: true,
 
-  // If we need pagination
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper.swiper-container--photo .swiper-pagination",
   },
 
-  // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper.swiper-container--photo .next",
+    prevEl: ".swiper.swiper-container--photo .prev",
   },
 
-  // And if we need scrollbar
   scrollbar: {
-    el: ".swiper-scrollbar",
+    el: ".swiper.swiper-container--photo .swiper-scrollbar",
+  },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
   },
 });

@@ -8,12 +8,9 @@ $thumb_height = 150;
 $list_count = (is_array($list) && $list) ? count($list) : 0;
 
 ?>
-<!-- <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+<h2 class="menu_title"><a href="<?php echo get_pretty_url($bo_table); ?>"><?php echo $bo_subject ?></a></h2>
 
 <div class="swiper <?php echo $bo_table; ?> " >
    
@@ -33,12 +30,14 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
     $wr_href = get_pretty_url($bo_table, $list[$i]['wr_id']);
     ?>
         <div  class="swiper-slide">
-          
+        
             <?php           
             echo "<a href=\"".$wr_href."\"> ";          
             echo  $img_content; 
             echo "</a>";
             ?>
+
+      <div class="slide-title"><?php echo $list[$i]['subject']; ?></div> 
            
         </div>
     <?php }  ?>
@@ -52,10 +51,11 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
     
 </div>
 <script>
-const swiper = new Swiper('.swiper.<?php echo $bo_table; ?>', {
+const menuswiper = new Swiper('.swiper.<?php echo $bo_table; ?>', {
   slidesPerView: 4,
   loop: true, 
   centeredSlides: true,
+  spaceBetween: 50,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
@@ -70,3 +70,15 @@ const swiper = new Swiper('.swiper.<?php echo $bo_table; ?>', {
   }
 });
 </script>
+<style>
+.menu_title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: darkblue;
+}
+.slide-title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+</style>
