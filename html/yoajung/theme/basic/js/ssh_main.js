@@ -87,50 +87,6 @@ function menuEvent() {
 
 menuEvent();
 
-// SWIPER
-const testswiper_swiper = new Swiper("#testswiper", {
-  // Optional parameters
-  // direction: 'vertical',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: "#testswiper .swiper-pagination",
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: "#testswiper .swiper-button-next",
-    prevEl: "#testswiper .swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-});
-
-const waffle_swiper = new Swiper(".swiper", {
-  // Optional parameters
-  // direction: 'vertical',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-});
 
 function mainMenu() {
   const tabList = document.querySelectorAll(".menu--main .tab-menu > li");
@@ -228,3 +184,28 @@ function mainMenu() {
     },
   });
 }
+
+
+// SWIPER
+
+const waffle_swiper = new Swiper(".swiper", {
+  // Optional parameters
+  // direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
