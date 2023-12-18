@@ -13,17 +13,29 @@ if(G5_COMMUNITY_USE === false) {
 ?>
 
     </div>
-    <div id="aside">
-        <?php echo outlogin('theme/basic'); // 외부 로그인, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>
-        <?php echo poll('theme/basic'); // 설문조사, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>
-    </div>
-
+ 
 <!-- </div>
 
 </div> -->
 <!-- } 콘텐츠 끝 -->
 
+<?php 
 
+$options = array();
+$options['is_login']    = 0;            //회원여부(0:비회원,1:회원)
+$options['category']    = '분류2';            //게시판분류명(분류가 없을경우 첫번째 분류값을 적용)
+$options['footer_h']    = '155';        //상담높이
+$options['bgcolor']        = '#161d2e';    //배경색상
+$options['background']    = '';            //배경이미지
+$options['title_chk']    = 0;            //타이틀사용여부(0:기본/1:커스텀)
+$options['title']        = $config['cf_title'].'에 고객님들이 관심을 보여주셨습니다.'; //타이틀
+$options['title_fs']    = '30';            //타이틀 폰트크기
+$options['title_fc']    = 'white';        //타이틀 폰트색상
+$options['btn']            = '간편상담';    //버튼
+$options['btnc']        = 'black';        //버튼색상
+
+
+echo latest('basic-footer-counsel', 'adm_form',  4, 23, '', $options); ?>
 
 <!-- 하단 시작 { -->
 <div id="ft">
