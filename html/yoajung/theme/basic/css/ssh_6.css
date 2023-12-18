@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+/* 공통 */
+body, a {
+  font-family: 'Pretendard-Regular', sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+
+/* 커스텀 */
+#header {
+  /* position: relative; */
+  top: unset;
+  max-width: unset;
+  border-bottom: 1px solid #333 !important;
+}
+
+
+.h_util {
+  background-color: #2a56b6;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: end;
+}
+.h_util li {
+  padding-left: 1rem;
+}
+.h_util a {
+  color: #fff;
+}
+
+#logo {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+/* gnb */
+#header .gnb  {
+  width: 100% !important;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+.gnb:hover .snb{
+  /* height: 200px !important; */
+  /* display: block; */
+}
+.snb {
+  /* display: block; */
+  /* height: 0;
+  overflow: hidden;
+  transition: .5s; */
+  
+}
+
+/* swiper */
+#test.swiper {
+  width: 600px;
+  height: 300px;
+  border: 1px solid #333;
+}
+
+/* 폰트어썸 되살리기 */
+i.fa+.sound_only{
+  /* position: unset;
+  display: inline-block;
+  margin: 0 !important;
+  padding: 0 5px !important;
+  font-size: 14px;
+  line-height: 1;
+  overflow: visible !important; */
+}
+
+span.bg {
+  display: none;
+}
+
+.wrap--main {
+  padding-top: 0;
+}
+
+#hd_sch #sch_stx {
+  font-size: 1.5rem;
+  width: 150px;
+  height: 30px;
+  background-color: #fff;
+  color: black;
+}
+#hd_sch #sch_submit {
+  height: 30px;
+  background-color: #ff868c;
+}
+#hd {
+  background-color: #FFA8AC;
+}
+#hd_wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#logo {
+  padding: 0;
+  width: auto;
+}
+.hd_sch_wr {
+  float: unset;
+  margin-bottom: 60px;
+}
+.hd_login {
+  position: unset;
+  right: unset;
+  top: unset;
+  margin-bottom: 60px;
+}
+#hd, #wrapper, #ft {
+  min-width: unset !important;
+}
+
+/* 헤더때매 가려지는 게시판 보이게하기 */
+.container.boardpage {
+  margin-top: 150px;
+}
+
+
+
+/* 반응형 */
+/* `ssh - 모바일 */
+@media screen and (max-width:1200px) {
+  #hd_wrapper {display: none;}
+
+}
