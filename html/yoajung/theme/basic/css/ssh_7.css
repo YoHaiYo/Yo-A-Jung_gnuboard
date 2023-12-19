@@ -124,8 +124,12 @@ span.bg {
 }
 
 /* 헤더때매 가려지는 게시판 보이게하기 */
-body.subpage .container.boardpage, .container.normalpage  {
+.container.boardpage, .container.normalpage  {
   margin-top: 250px;
+  margin-bottom: 250px;
+}
+span[title="로그인"] {
+  text-align: center;  
 }
 
 /* 반응형 */
