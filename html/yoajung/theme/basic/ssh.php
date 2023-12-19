@@ -9,40 +9,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
   <!-- S:상단 -->
 
   <!-- E:상단 -->
-  <!-- S:퀵메뉴 -->
-  <div class="quick">
-    <div class="q_container">
-      <div class="q_inner">
-        <div class="q_menu">
-          <div class="q_menu__item">
-            <a href="javascript:void(0);">
-              <div class="text">
-                <p class="t01">개교문의</p>
-                <p class="t02">1588-1706</p>
-              </div>
-            </a>
-          </div>
-          <div class="q_menu__item">
-            <a href="/child/sub/startup/guide.php">
-              <div class="icon icon--01"></div>
-              <div class="text">
-                <p class="t01">개교과정</p>
-              </div>
-            </a>
-          </div>
-          <div class="q_menu__item">
-            <a href="/child/sub/startup/consulting.php">
-              <div class="icon icon--02"></div>
-              <div class="text">
-                <p class="t01">상담문의</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- E:퀵메뉴 -->
+
   <!-- S:창업문의 밴드 -->
   <div class="band">
     <!-- S:밴드 버튼 -->
@@ -236,10 +203,10 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <p class="t04">와플대학에서 K와플을 즐겨보세요!</p>
             <ul class="list list--link">
               <li>
-                <a href="/child/sub/startup/consulting.php" class="button button--lineblue">창업 문의</a>
+                <a href="http://yohayo.dothome.co.kr/yoajung/bbs/content.php?co_id=franchise_procedure" class="button button--lineblue">창업 문의</a>
               </li>
               <li>
-                <a href="/child/sub/brand/" class="button button--blue">브랜드 소개</a>
+                <a href="http://yohayo.dothome.co.kr/yoajung/bbs/content.php?co_id=brand" class="button button--blue">브랜드 소개</a>
               </li>
             </ul>
           </div>
@@ -263,63 +230,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <ul class="tab-con">
               <li class="on">
                 <div class="block">
-
-                  <!-- <div class="board-list">
-                    <div class="item">
-                      <a href="/child/sub/news/event/view.php?seq=17">
-                        <div class="thumb">
-                          <div class="thumb_img"
-                            style="background-image:url('https://www.waffleuniv.com/upload/event/657962dd78fa2.jpg');">
-                          </div>
-                        </div>
-                        <div class="text">
-                          <p class="text_subject">와플대학 X SK T멤버십 Tday 프로모션</p>
-                          <span class="text_data">2023.12.13</span>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="item">
-                      <a href="/child/sub/news/event/view.php?seq=16">
-                        <div class="thumb">
-                          <div class="thumb_img"
-                            style="background-image:url('https://www.waffleuniv.com/upload/event/6572e783a7c99.jpg');">
-                          </div>
-                        </div>
-                        <div class="text">
-                          <p class="text_subject">23년도 겨울 신메뉴 체험단 모집</p>
-                          <span class="text_data">2023.12.08</span>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="item">
-                      <a href="/child/sub/news/event/view.php?seq=14">
-                        <div class="thumb">
-                          <div class="thumb_img"
-                            style="background-image:url('https://www.waffleuniv.com/upload/event/656d8aa0c9c8d.jpg');">
-                          </div>
-                        </div>
-                        <div class="text">
-                          <p class="text_subject">캠퍼스 리뷰 ZIP 제보 이벤트</p>
-                          <span class="text_data">2023.12.04</span>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="item">
-                      <a href="/child/sub/news/event/view.php?seq=13">
-                        <div class="thumb">
-                          <div class="thumb_img"
-                            style="background-image:url('https://www.waffleuniv.com/upload/event/655c755ef17e7.jpg');">
-                          </div>
-                        </div>
-                        <div class="text">
-                          <p class="text_subject">와플대학 X 카카오페이 리워드 프로모션</p>
-                          <span class="text_data">2023.11.21</span>
-                        </div>
-                      </a>
-                    </div>
-                    
-                  </div> -->
-                  <!-- `ssh -->
+                  <!-- `ssh 이벤트메뉴 -->
                   <?php echo latest("ssh_event", "event", 4, 100); ?>
 
                 </div>
@@ -332,56 +243,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     </div>
     <!-- E:게시판 -->
 
-    <!-- S:검색 -->
-    <div class="sec sec--05">
-      <div class="container container--w1600">
-        <div class="store store--main">
-          <div class="din">
-            <div class="lt">
-              <div class="text">
-                <p class="t01 font-family--montserrat">
-                  <span>Since 2008</span>
-                </p>
-                <p class="t02">1000만개의 와플, 그렇지만 <b>단 하나의 와플!</b></p>
-                <p class="t03">
-                  와플대학은 <b>초심을 잃지 않고</b> 첫 날 판매한 <br class="pc">
-                  첫 번째 와플을 기억하고 있습니다. <br>
-                  와플대학을 찾아주시는 분들을 위해서 <br class="pc">
-                  <b>세상 단 하나뿐인 와플</b>을 드리기 위해 <br class="pc">
-                  더욱 노력하고 있습니다.
-                </p>
-              </div>
-            </div>
-            <div class="rt">
-              <div class="sch">
-                <div class="sch-wrap">
-                  <div class="sch-title">
-                    <p>캠퍼스 찾기</p>
-                    <span>와플대학 캠퍼스 위치안내 입니다.</span>
-                  </div>
-                  <form id="search_form" method="get" action="/child/sub/store/search/">
-                    <div class="sch-input">
-                      <input type="text" name="search_text" placeholder="찾으시는 캠퍼스명을 입력해주세요.">
-                      <div class="input_btn">
-                        <button type="submit" class="button"></button>
-                      </div>
-                    </div>
-                    <div class="sch-click">
-                      <button type="submit" class="button">매장 검색하기</button>
-                    </div>
-                    <div class="sch-ele">
-                      <img class="ele-abs" src="https://www.waffleuniv.com/child/img/main/store/sec05_ai02.png" alt="">
-                      <img src="https://www.waffleuniv.com/child/img/main/store/sec05_ai03.png" alt="">
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- E:검색 -->
+   
 
   </main>
   <!-- E:메인 -->

@@ -36,12 +36,3 @@
 .pic_lt .lt_more {position:absolute;top:11px;right:0;display:block;width:40px;line-height:25px;color:#3a8afd;border-radius:3px;text-align:center}
 .pic_lt .lt_more:hover {color:#777}
 
-/* `ssh */
-.sec--04 .tab-con li {
-  display: block !important;
-  position: unset;
-}
-.gallery_li>a>img{
-  height: 150px;
-  width: 150px;
-}

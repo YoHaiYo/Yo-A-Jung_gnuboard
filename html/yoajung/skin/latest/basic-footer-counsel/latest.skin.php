@@ -83,6 +83,29 @@ $options['btnc'] = (isset($options['btnc']) && $options['btnc']) ? $options['btn
     margin-right: 1rem !important;
 		font-family: 'Pretendard-Regular', sans-serif !important;
 	}
+	/* 반응형 */
+	@media(max-width:1200px) {
+		#footer_counsel {
+			padding-left: 40%;
+		}
+		#footer_counsel .footer_str_count {
+			font-size: 20px;
+		}
+		#footer_counsel .foo_sonbox>ul {
+			display: flex;
+			flex-direction: column;
+		}
+		#footer_counsel .foo_sonbox>ul>li {
+			margin: 3px
+		}
+		#footer_counsel .f_a1 {
+   	 position: unset !important;
+		}
+		#footer_counsel .f_bu {
+			float: left !important;
+		}
+}
+
 	</style>
 
 	<div id="footer_counsel" class="footer_counsel quotation font-ng band-def">

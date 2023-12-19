@@ -9,7 +9,7 @@ $thumb_height = 150;
 $list_count = (is_array($list) && $list) ? count($list) : 0;
 ?>
 
-<div class="pic_lt">
+<div class="pic_lt" id="ssh-event">
     <p class="sec-tit">
         <span><a href="<?php echo get_pretty_url($bo_table); ?>"><?php echo $bo_subject ?></a></span>
     </p>
@@ -43,12 +43,6 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
 			if ($list[$i]['icon_new']) echo "<span class=\"new_icon\">N<span class=\"sound_only\">새글</span></span>";
             if ($list[$i]['icon_hot']) echo "<span class=\"hot_icon\">H<span class=\"sound_only\">인기글</span></span>";
 
-            // if ($list[$i]['link']['count']) { echo "[{$list[$i]['link']['count']}]"; }
-            // if ($list[$i]['file']['count']) { echo "<{$list[$i]['file']['count']}>"; }
-
-			// echo $list[$i]['icon_reply']." ";
-			// if ($list[$i]['icon_file']) echo " <i class=\"fa fa-download\" aria-hidden=\"true\"></i>" ;
-            // if ($list[$i]['icon_link']) echo " <i class=\"fa fa-link\" aria-hidden=\"true\"></i>" ;
 
             if ($list[$i]['comment_cnt'])  echo "
             <span class=\"lt_cmt\">".$list[$i]['wr_comment']."</span>";
@@ -64,6 +58,33 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
     <li class="empty_li">게시물이 없습니다.</li>
     <?php }  ?>
     </ul>
-    <a href="<?php echo get_pretty_url($bo_table); ?>" class="lt_more"><span class="sound_only"><?php echo $bo_subject ?></span>더보기</a>
 
 </div>
+
+<style>
+    /* `ssh */
+.sec--04 .tab-con li {
+  display: block !important;
+  position: unset;
+}
+.gallery_li>a>img{
+  /* max-height: 150px; */
+  /* max-width: 150px; */
+}
+#ssh-event ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+#ssh-event ul li {
+    flex: 1;
+    max-width: 48%; /* 2개씩 나열되도록 설정 */
+    margin: 0.5%;
+}
+#ssh-event ul li img {
+    max-width: 100%; /* 이미지가 부모 너비를 벗어나지 않도록 설정 */
+    height: auto; 
+}
+</style>

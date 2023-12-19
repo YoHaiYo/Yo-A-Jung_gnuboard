@@ -52,7 +52,7 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
 </div>
 <script>
 const menuswiper = new Swiper('.swiper.<?php echo $bo_table; ?>', {
-  slidesPerView: 4,
+  slidesPerView: 1,
   loop: true, 
   centeredSlides: true,
   spaceBetween: 50,
@@ -60,14 +60,28 @@ const menuswiper = new Swiper('.swiper.<?php echo $bo_table; ?>', {
     delay: 2500,
     disableOnInteraction: false,
   },
-  pagination: {
-    el: '.swiper.<?php echo $bo_table; ?> .swiper-pagination',
-    type: "fraction",
-  }, 
   navigation: {
     nextEl: '.swiper.<?php echo $bo_table; ?> .swiper-button-next',
     prevEl: '.swiper.<?php echo $bo_table; ?> .swiper-button-prev',
-  }
+  },
+  breakpoints: {
+        600: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        900: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1400: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      },
 });
 </script>
 <style>
@@ -78,7 +92,16 @@ const menuswiper = new Swiper('.swiper.<?php echo $bo_table; ?>', {
   color: darkblue;
 }
 .slide-title {
-  text-align: center;
-  font-size: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-family: 'Pretendard-Regular', sans-serif;
 }
+.swiper.menu .swiper-slide img{
+  border-radius: 10px;
+}
+.swiper.menu .swiper-slide-active img {
+
+} 
+
 </style>
