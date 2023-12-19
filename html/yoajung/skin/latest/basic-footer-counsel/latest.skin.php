@@ -33,9 +33,10 @@ $options['btnc'] = (isset($options['btnc']) && $options['btnc']) ? $options['btn
 	<!-- <div style="height:<?php echo $options['footer_h'];?>px;"></div> -->
 	<style>
 	.quotation{
-		height:<?php echo $options['footer_h'];?>px;
+		/* height:<?php echo $options['footer_h'];?>px; */
 		<?php if($options['bgcolor']){ ?>background-color:<?php echo $options['bgcolor'];?>;<?php } ?>
 		<?php if($options['background']){ ?>background:url('<?php echo $options['background'];?>') center 0;<?php } ?>
+		bottom: 60px
 	}
 	.footer_counsel div, .footer_counsel span, .footer_counsel p, .footer_counsel img, .footer_counsel ul, .footer_counsel li, .footer_counsel form, .footer_counsel label{
 		margin:0;
@@ -43,15 +44,48 @@ $options['btnc'] = (isset($options['btnc']) && $options['btnc']) ? $options['btn
 		border:0;
 		font-size:100%;
 		vertical-align:baseline;
-		background:transparent;
+		/* background:transparent; */
 		font-family:'Nanum Gothic'
 	}
 	.footer_counsel ul, .footer_counsel li{
 		list-style:none;
 	}
+	.form-toggle {
+		width: 100%;
+		height: 60px;
+		background-color: #5db1ff;
+		position: fixed;
+    bottom: 0;
+    left: 0;
+		display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+	.din {
+		display: flex;
+    justify-content: center;
+	}
+	.rt {
+		cursor: pointer;
+	}
+	#footer_counsel #footer_counsel_form{
+		display: none;
+		/* height: 0; */
+	}
+	#footer_counsel.toggle-active #footer_counsel_form{
+		display: block;
+	}
+	.footer_counsel .foo_coun {
+		height: unset;
+	}
+	.cnt p{
+		font-size: 2rem !important;
+    margin-right: 1rem !important;
+		font-family: 'Pretendard-Regular', sans-serif !important;
+	}
 	</style>
 
-	<div id="footer_counsel" class="footer_counsel quotation font-ng">
+	<div id="footer_counsel" class="footer_counsel quotation font-ng band-def">
 		<div class="foo_coun">
 			<form id="footer_counsel_form" method="post">
 				<?php if($is_title){ ?>
@@ -117,6 +151,16 @@ $options['btnc'] = (isset($options['btnc']) && $options['btnc']) ? $options['btn
 					</div>
 				</div>
 			</form>
+			<div class="form-toggle">
+				<div class="din">				
+					<div class="cnt">
+						<p>요아정 창업 문의</p>
+					</div>
+					<div class="rt">
+						<img src="https://www.waffleuniv.com/child/img/inc/brand_arrow.png" alt="">
+					</div>
+				</div>
+			</div>
 		</div>
 		<script type="text/javascript">
 
@@ -228,7 +272,7 @@ alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+
 				}
 			}
 
-			$(document).on('scroll', function (e) {
+/* 			$(document).on('scroll', function (e) {
 				var yPos = $(window).scrollTop();
 				//console.log('yPos=' + yPos + ', height=' + $('#footer_counsel').css('height'));
 				if (yPos == 0) {
@@ -241,7 +285,18 @@ alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+
 						$('#footer_counsel').animate({ height: "0px" }, 0).stop().animate({ height: "<?php echo $options['footer_h'];?>px" }, 500);
 					}
 				}
-			});
+			}); */
+
+			// 토글로 접어다 펴기
+			document.addEventListener('DOMContentLoaded', function () {
+        var formToggle = document.querySelector('.form-toggle');
+        var footerCounsel = document.getElementById('footer_counsel');
+
+        formToggle.addEventListener('click', function () {
+            // toggle-active 클래스를 추가하고 제거하여 토글 효과 적용
+            footerCounsel.classList.toggle('toggle-active');
+        });
+    });
 		</script>
 	</div>
 

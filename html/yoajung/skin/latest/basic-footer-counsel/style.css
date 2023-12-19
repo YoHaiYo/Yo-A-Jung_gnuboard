@@ -140,7 +140,7 @@
 /* Color ------------------------------------------------------ */
 
 /*하단 상담신청배너 st*/
-.quotation{position: fixed; bottom: 0px;z-index: 10002;width: 100%;}
+.quotation{position: fixed; bottom: 70px;z-index: 10002;width: 100%;}
 .footer_counsel {width: 100%;padding-top:0px;}
 .footer_counsel .foo_coun {width:1200px;margin: 0 auto;position: relative;height: 180px;}
 .footer_counsel .foo_sonbox {position: relative;height: 90px; border: 0px solid red;padding-top:6px;}
