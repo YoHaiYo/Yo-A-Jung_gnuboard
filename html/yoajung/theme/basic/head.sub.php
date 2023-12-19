@@ -35,6 +35,14 @@ header("Pragma: no-cache"); // HTTP/1.0
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="요아정">
+<meta property="og:description" content="그누보드로 일주일만에 요아정 소개페이지만들기">
+<meta property="og:site_name" content="요아정">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+<meta name='subject' content='요아정'>
+<meta name='author' content='심세훈'>
+<meta name="description" content="그누보드로 일주일만에 요아정 소개페이지만들기">
 <?php
 
     echo '<meta name="viewport" id="meta_viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10">'.PHP_EOL;
@@ -43,6 +51,7 @@ header("Pragma: no-cache"); // HTTP/1.0
 
     echo '<meta http-equiv="imagetoolbar" content="no">'.PHP_EOL;
     echo '<meta http-equiv="X-UA-Compatible" content="IE=edge">'.PHP_EOL;
+
 
 
 if($config['cf_add_meta'])

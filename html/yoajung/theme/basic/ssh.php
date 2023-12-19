@@ -134,13 +134,15 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
   <!-- E:창업문의 밴드 -->
   <main role="main" id="main">
 
+
+
     <!-- S:비주얼 -->
     <div class="sec sec--01">
       <div class="visual">
         <div class="din">
           <div class="lt">
             <div class="visual-tit" data-aos="fade-in">
-              <img src="https://www.waffleuniv.com/child/img/main/visual/sec01_visual__tit01.png" alt="">
+              <img src="/yoajung/img/ssh/yoajung-main-1.png" alt="">
             </div>
           </div>
           <div class="rt">
@@ -150,14 +152,14 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                   <div class="swiper-slide">
                     <div class="photo">
                       <div class="photo_thumb"
-                        style="background-image:url('https://www.waffleuniv.com/upload/banner/65530187081d4.png');">
+                        style="background-image:url('/yoajung/img/ssh/yoajung-main-slide-1.jpg');">
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="photo">
                       <div class="photo_thumb"
-                        style="background-image:url('https://www.waffleuniv.com/upload/banner/655daffe96867.png');">
+                        style="background-image:url('/yoajung/img/ssh/yoajung-main-slide-2.jpg');">
                       </div>
                     </div>
                   </div>
@@ -193,14 +195,17 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
       <div class="brand">
         <div class="container">
           <div class="text" data-aos="fade-up">
-            <p class="t01 font-family--montserrat">WAFFLE & COFFEE</p>
-            <p class="t02">와플대학 BRAND STORY</p>
-            <p class="t03">2008년부터 시작한 대한민국 와플 <b>NO.1,</b></p>
+            <p class="t01 font-family--montserrat">YOGURT & TOPPING</p>
+            <p class="t02">요아정 BRAND STORY</p>
+            <p class="t03">'가맹점200개' <b>'점유율1위', </b></p>
             <p class="t04">
-              와플대학은 다양한 10가지 맛 크림과 맛있는 토핑으로 만든 <br class="pc" />
-              바삭한 와플을 커플, 가족, 친구, 아이와 함께 즐길 수 있는 카페입니다.
+              "배달 요거트 아이스크림 점유율 1위" <br class="pc" />
+              "1년만의 전국 200개 가맹점 달성"
             </p>
-            <p class="t04">와플대학에서 K와플을 즐겨보세요!</p>
+            <p  class="t04">요거트 아이스크림의 정석은 맛과 건강을 모두 갖춘 건강 디저트라는 컨셉으로 <br class="pc" /> 
+            전국 200여개의 매장에서 ‘배달의 민족’을 통하여 인기리에 판매되고 있습니다. <br class="pc" /> 
+            특히, ‘배달의 민족’ APP 내 많은 리뷰수와 높은 평점으로 요거트 아이스크림 분야 점유율 1위를 기록하고 있습니다. </p>            
+            <p class="t04">요아정에서 요거트아이스크림의 정석을 즐겨보세요!</p>
             <ul class="list list--link">
               <li>
                 <a href="http://yohayo.dothome.co.kr/yoajung/bbs/content.php?co_id=franchise_procedure" class="button button--lineblue">창업 문의</a>
@@ -253,3 +258,18 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 </div>
 
 <?php } ?><!-- index에서만 실행 -->
+
+<style>
+  .sec--01 {
+      background: url(/yoajung/img/ssh/yoajung-main-bg-2.jpg) no-repeat center / cover;
+  }
+  .sec--03 {
+    position: relative;
+    background: url(/yoajung/img/ssh/yoajung-brand-bg.png), linear-gradient(to bottom, #fffce8, #fff);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 340px 0px;
+}
+
+</style>
