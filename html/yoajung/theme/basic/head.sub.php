@@ -104,7 +104,7 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_JS_URL.'/font-awesome/css/font
 // add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/waffle.css">');
 add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/ssh_waffle_.css">');
 add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/ssh_header_6.css">');
-add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/ssh_7.css">');
+add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/ssh_8.css">');
 
 
 if(G5_IS_MOBILE) {

@@ -132,9 +132,21 @@ span[title="로그인"] {
   text-align: center;  
 }
 
+/* 팝업 위치 */
+#hd_pop {
+  z-index: 999999;
+}
+#hd_pops_1 {
+  position: fixed;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+}
+
 /* 반응형 */
 /* `ssh - 모바일 */
 @media screen and (max-width:1200px) {
   #hd_wrapper {display: none;}
 
 }
+
