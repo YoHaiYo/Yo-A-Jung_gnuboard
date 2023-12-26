@@ -1,7 +1,8 @@
-﻿# 배포 호스팅 주소
+﻿
+# 배포 호스팅 주소
 http://yohayo.dothome.co.kr/yoajung/
 
-﻿# 관리자 페이지 메뉴얼
+# 관리자 페이지 메뉴얼
 http://yohayo.dothome.co.kr/yoajung/](https://drive.google.com/file/d/1YMlvQhG8uYO5mJGJnIc1I7OMbuO1QOjf/view?usp=drive_link
 
 # 프로젝트 소개
