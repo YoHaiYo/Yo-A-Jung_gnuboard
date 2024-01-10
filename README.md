@@ -1,4 +1,6 @@
-﻿
+# Preview
+![image](https://github.com/YoHaiYo/Yo-A-Jung_gnuboard/assets/124754510/ac3f16b7-a870-42c6-a857-dfa94c9f0291)
+
 # 배포 호스팅 주소
 http://yohayo.dothome.co.kr/yoajung/
 
@@ -8,13 +10,13 @@ https://drive.google.com/file/d/1YMlvQhG8uYO5mJGJnIc1I7OMbuO1QOjf/view?usp=drive
 # 프로젝트 소개
 **요거트아이스크림의 정석**
 
-그누보드로 만든 요아정 소개페이지입니다.
+ 그누보드5으로 만들어진 아이스크림 브랜드 ‘요거트아이스크림의 정석(요아정)’의 소개 사이트입니다. 
 
-# 사용플러그인
-- gnuboard5.5.10
-- SWIPER 11
-- AOS 2.3.1
-- jquery 1.12.4
+ # 프로젝트 특징
+- 로고이미지, GNB 메뉴, 메인페이지 이미지 모두 관리자페이지로 연동되어 유지보수가 되도록 작업 하였습니다.
+- 페이지 하단에 ‘창업문의’를 폼태그를 통해 작업하였고, 고객들이 보낸 창업문의 정보를 관리자페이지에서 확인 할 수 있게 하였습니다.
+- 반응형으로 작업하여 PC뷰, 모바일뷰 모두 적용할 수 있습니다.
+- body 와 container에 게시판, 내용관리 마다 다르게 클래스명을 주어 레이아웃 관리에 용이하게 하였습니다.
 
 # 제작기간
 23.12.13 ~ 23.12.19 (7일)
@@ -36,6 +38,8 @@ https://drive.google.com/file/d/1YMlvQhG8uYO5mJGJnIc1I7OMbuO1QOjf/view?usp=drive
 
 23.12.19 : 반응형작업 및 디자인수정, SEO최적화 후 프로젝트 완료.
 
-# 작업세부사항
-- body 와 container에 게시판, 내용관리 마다 다르게 클래스명을 주어 레이아웃 관리에 용이하게 하였습니다.
-- 로고이미지, GNB 메뉴, 메인페이지 이미지 모두 관리자페이지로 연동되어 유지보수가 되도록 작업 하였습니다.
+# 사용플러그인
+- gnuboard5.5.10
+- SWIPER 11
+- AOS 2.3.1
+- jquery 1.12.4
