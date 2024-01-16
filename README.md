@@ -38,8 +38,10 @@ https://drive.google.com/file/d/1YMlvQhG8uYO5mJGJnIc1I7OMbuO1QOjf/view?usp=drive
 
 23.12.19 : 반응형작업 및 디자인수정, SEO최적화 후 프로젝트 완료.
 
-# 사용플러그인
+# 사용 기술
 - gnuboard5.5.10
+- Maria DB
+- php 7 
 - SWIPER 11
 - AOS 2.3.1
 - jquery 1.12.4
